@@ -47,4 +47,25 @@ ajustes.old  plantillas  registros  runner.sh  runner.sh.sig  sensores.log
  rename evaluation/kepler/{docs => registros}/README.txt (100%)
 @Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ mv evaluation/kepler/sensores.log evaluation/kepler/registros
 @Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ mv evaluation/kepler/ajustes.old evaluation/kepler/ajustes.conf
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ ls evaluation/kepler
+ajustes.conf  plantillas  registros  runner.sh  runner.sh.sig
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ ls evaluation/kepler/registros
+README.txt  sensores.log
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ git add .
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ git commit -m "Fix problema 2: archivos movidos y renombrados"
+[eval_p2_1_g2 7d964b9] Fix problema 2: archivos movidos y renombrados
+ 3 files changed, 50 insertions(+)
+ create mode 100644 backup.sh
+ rename evaluation/kepler/{ajustes.old => ajustes.conf} (100%)
+ rename evaluation/kepler/{ => registros}/sensores.log (100%)
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ chmod 640 evaluation/kepler/registros/sensores.log
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ ls -l evaluation/kepler/registros/sensores.log
+-rw-r----- 1 codespace codespace 270 Apr 24 16:19 evaluation/kepler/registros/sensores.log
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ git add .
+@Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ git commit -m "Fix problema 3: permisos numericos 600 en sensores.log"
+On branch eval_p2_1_g2
+Your branch is ahead of 'upstream/eval_p2_1_g2' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 @Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ 
