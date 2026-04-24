@@ -132,7 +132,6 @@ drwxr-xrwT+ 2 codespace codespace 4096 Apr 24 16:42 /tmp/kepler_zone
 On branch eval_p2_1_g2
 Your branch is ahead of 'upstream/eval_p2_1_g2' by 3 commits.
   (use "git push" to publish your local commits)
-
 @Nailuj-glitch ➜ /workspaces/UNIX-02-SIN-A-Mar-Jul-2026 (eval_p2_1_g2) $ gpg --batch --passphrase '' --quick-gen-key 'vega <vega@kepler.lab>' default default
 gpg: directory '/home/codespace/.gnupg' created
 gpg: keybox '/home/codespace/.gnupg/pubring.kbx' created
